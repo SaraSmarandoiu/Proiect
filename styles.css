@@ -7,13 +7,22 @@
 }
 .gallery-div {
   background-image: linear-gradient(to bottom, #ffa5ba, rgba(255, 245, 246, 0));
+  width: 100%;
+  justify-content: center;
 }
 .pink-ice-cream {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-
+.testimonials-div-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 900px;
+}
 .image-transition:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   transform: scale(1.2);
@@ -42,6 +51,7 @@
 /* Slider*/
 
 .review {
+  display: flex;
   background: rgba(250, 250, 250, 1);
   width: 968px;
   height: 135px;
@@ -98,7 +108,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   text-align: center;
 }
 .slide {
@@ -107,6 +116,7 @@
   align-items: center;
   justify-content: center;
   gap: 16px;
+  width: 100%;
 }
 .flip-frame {
   height: 350px;
@@ -183,7 +193,7 @@
   fill: rgb(178, 178, 183);
   justify-content: center;
   text-align: center;
-  display: flex;
+  display: inline;
 }
 
 .nav {
