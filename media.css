@@ -3,6 +3,12 @@
     width: 100%;
     height: auto;
   }
+  .gallery-div {
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    margin: 0%;
+    padding: 0%;
+  }
   .pink-ice-cream {
     width: 100%;
     flex-wrap: wrap;
@@ -12,6 +18,7 @@
     max-width: 480px;
     padding: 0%;
     gap: 6px;
+    overflow: hidden;
   }
   .pink-ice-cream.zero {
     margin-top: 190px;
@@ -32,7 +39,7 @@
     margin-top: 170px;
   }
   .slide {
-    margin-top: 60px;
+    margin-top: 16px;
     justify-content: center;
     gap: 32px;
     align-items: center;
@@ -49,22 +56,29 @@
     height: auto;
     flex-wrap: wrap;
   }
-
+  .testimonials-div-container {
+    overflow-x: hidden;
+  }
   .nav {
-    gap: 200px;
+    gap: 180px;
     flex-wrap: wrap;
-    margin-top: 600px;
+    margin-top: 500px;
+    justify-content: center;
   }
   .pagination {
-    margin-top: 650px;
+    margin-top: 550px;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .gallery-div {
     overflow-x: hidden;
     flex-wrap: wrap;
+    margin: 0%;
+    padding: 0%;
   }
-
+  .testimonials-div-container {
+    overflow-x: hidden;
+  }
   .image-transition {
     width: 100%;
     height: auto;
@@ -98,6 +112,7 @@
     margin-top: 170px;
   }
   .slide {
+    gap: 32px;
     margin-top: 80px;
     justify-content: center;
     align-items: center;
@@ -106,8 +121,6 @@
   .flip-slider {
     width: 100%;
     flex-wrap: wrap;
-
-    height: auto;
   }
 
   .review {
@@ -116,14 +129,12 @@
     height: auto;
     flex-wrap: wrap;
   }
-  .testimonials-div-container {
-    height: auto;
-  }
 
   .nav {
     gap: 200px;
     flex-wrap: wrap;
     margin-top: 500px;
+    justify-content: center;
   }
   .pagination {
     margin-top: 550px;
@@ -163,7 +174,7 @@
     margin-top: 170px;
   }
   .slide {
-    margin-top: 160px;
+    margin-top: 16px;
     justify-content: center;
     gap: 32px;
     align-items: center;
@@ -180,11 +191,12 @@
   }
 
   .nav {
-    gap: 200px;
+    gap: 300px;
     flex-wrap: wrap;
-    margin-top: 700px;
+    margin-top: 350px;
+    justify-content: center;
   }
   .pagination {
-    margin-top: 750px;
+    margin-top: 400px;
   }
 }
