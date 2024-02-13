@@ -62,7 +62,7 @@
   .nav {
     gap: 180px;
     flex-wrap: wrap;
-    margin-top: 500px;
+    margin-top: 600px;
     justify-content: center;
   }
   .pagination {
@@ -133,7 +133,7 @@
   .nav {
     gap: 200px;
     flex-wrap: wrap;
-    margin-top: 500px;
+    margin-top: 600px;
     justify-content: center;
   }
   .pagination {
@@ -193,10 +193,15 @@
   .nav {
     gap: 300px;
     flex-wrap: wrap;
-    margin-top: 350px;
+    margin-top: 450px;
     justify-content: center;
   }
   .pagination {
     margin-top: 400px;
   }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }

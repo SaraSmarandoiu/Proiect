@@ -188,7 +188,7 @@
   cursor: pointer;
   background-color: transparent;
   border: none;
-  height: 50px;
+  height: auto;
   width: 50px;
   fill: rgb(178, 178, 183);
   justify-content: center;
@@ -202,7 +202,7 @@
   justify-content: center;
   position: absolute;
   gap: 1000px;
-  margin-top: 250px;
+  margin-top: 300px;
 }
 
 .pagination {
@@ -223,4 +223,7 @@
 
 .pagination .dot.active {
   background-color: rgba(211, 19, 66, 1);
+}
+.container {
+  overflow-x: hidden;
 }
