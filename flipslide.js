@@ -146,14 +146,14 @@ var flip1 = new FlipSlider({
 function FlipSlider(options) {
   // Private Vars
   var container = options.container,
-      startSlideIndex = options.startIndex || 0,
-      slider = container.querySelector(".flip"),
-      slides = slider.querySelectorAll(".slide"),
-      nextBtn = container.querySelector(".next"),
-      prevBtn = container.querySelector(".prev"),
-      pagination = container.querySelector(".pagination"),
-      timeout,
-      activeIndex = startSlideIndex;
+    startSlideIndex = options.startIndex || 0,
+    slider = container.querySelector(".flip"),
+    slides = slider.querySelectorAll(".slide"),
+    nextBtn = container.querySelector("#next"),
+    prevBtn = container.querySelector("#prev"),
+    pagination = container.querySelector(".pagination"),
+    timeout,
+    activeIndex = startSlideIndex;
 
   // Public functions
 
@@ -179,7 +179,7 @@ function FlipSlider(options) {
       }
 
       var frontSlide = slider.querySelector(".front"),
-          backSlide = findBack(dir);
+        backSlide = findBack(dir);
 
       backSlide.classList.add("back");
 
@@ -197,7 +197,7 @@ function FlipSlider(options) {
   // Reset slides on completion
   function resetSlides() {
     var frontSlide = slider.querySelector(".front"),
-        backSlide = slider.querySelector(".back");
+      backSlide = slider.querySelector(".back");
 
     backSlide.classList.add("front");
     backSlide.classList.remove("back");
@@ -209,7 +209,7 @@ function FlipSlider(options) {
   // Find slide to set it back-flip
   function findBack(dir) {
     var frontIndex = Array.from(slides).indexOf(slider.querySelector(".front")),
-        targetIndex;
+      targetIndex;
 
     if (dir == -1) {
       targetIndex = frontIndex === 0 ? slides.length - 1 : frontIndex - 1;
@@ -222,16 +222,16 @@ function FlipSlider(options) {
 
   // Update pagination
   function updatePagination() {
-    pagination.innerHTML = '';
+    pagination.innerHTML = "";
 
     for (var i = 0; i < slides.length; i++) {
-      var dot = document.createElement('span');
-      dot.classList.add('dot');
+      var dot = document.createElement("span");
+      dot.classList.add("dot");
       if (i === activeIndex) {
-        dot.classList.add('active');
+        dot.classList.add("active");
       }
       dot.dataset.index = i;
-      dot.addEventListener('click', function () {
+      dot.addEventListener("click", function () {
         var index = parseInt(this.dataset.index);
         goToSlide(index);
       });
@@ -267,5 +267,3 @@ var flip1 = new FlipSlider({
   startIndex: 1,
   container: document.querySelector(".flip-slider"),
 });
-
-
