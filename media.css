@@ -1,18 +1,19 @@
 @media screen and (max-width: 480px) {
-  .image-transition {
-    width: 100%;
-    height: auto;
-  }
   .gallery-div {
     overflow-x: hidden;
     flex-wrap: wrap;
     margin: 0%;
     padding: 0%;
+    width: 480px;
   }
   .pink-ice-cream {
     width: 100%;
     flex-wrap: wrap;
     gap: 6px;
+  }
+  .image-transition {
+    width: 100%;
+    height: auto;
   }
   .images.container-img {
     max-width: 480px;
@@ -75,7 +76,6 @@
   }
   .name {
     font-size: 14px;
-    
   }
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
